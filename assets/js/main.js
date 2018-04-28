@@ -15,14 +15,15 @@ jQuery(document).ready(function ($) {
 		var pos = $(window).scrollTop();
 		if (pos > a) {
 			$(".header-top .navbar").css({
-				background: '#7362de',
+				background: '#222',
 				transition: 'all 0.3s ease-in-out',
 				height: 60,
+				opacity: 1, //HACK
 			});
 			$(".header-top .navbar").addClass("animated slideInDown");
 		} else {
 			$(".header-top .navbar").css({
-				background: 'transparent'
+				opacity: 0 //HACK
 			});
 			$(".header-top .navbar").removeClass("animated slideInDown");
 		}
