@@ -62,8 +62,10 @@ img.logo {
 }
 
 .header-area {
-	background-color: #222;
-	height: 100%;
+	background-image: url('assets/img/header-background.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	position:relative;
 	display: block;
 	z-index: 3;
 }
@@ -159,7 +161,6 @@ li.getstart a.active {
 
 .hero-text-wrapper {
 	display: table;
-	height: 977px;
 	width: 100%;
 }
 
@@ -192,9 +193,33 @@ li.getstart a.active {
 .hero-text h1 {
 	color: #fff;
 	font-weight: 500;
-	font-size: 150px;
-	line-height: 150px;
+	font-size: 6em;
+	line-height: 1em;
 	margin-bottom: 25px;
+}
+
+/* Typing text effect */
+#typedText:after {
+    content: "|";
+    font-weight: 400;
+    animation: blink 500ms ease-in-out infinite alternate;
+
+}
+
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
 }
 
 .hero-text p {
@@ -214,7 +239,7 @@ a.btn-light {
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 600;
-	background: #AD4744;
+	background: #e4bc5f;
 	border: none;
 	border-radius: 50px;
 	transition: all 0.3s ease-in-out;
@@ -254,7 +279,7 @@ a.scroll-down {
 }
 
 a.scroll-down:hover {
-	background: #AD4744;
+	background: #e4bc5f;
 	color: #fff;
 }
 
@@ -293,13 +318,13 @@ a.scroll-down:hover {
 	left: 0;
 	width: 25px;
 	height: 1px;
-	background: #AD4744;
+	background: #501716;
 	content: "";
 }
 
 .choose-text h1 {
 	font-size: 60px;
-	color: #4f4f6f;
+	color: #501716;
 	font-weight: 500;
 	margin-bottom: 40px;
 }
@@ -330,7 +355,7 @@ a.scroll-down:hover {
 	background: -moz-linear-gradient(-45deg, rgba(110, 69, 226, 1) 0%, rgba(136, 211, 206, 1) 99%);
 	background: -webkit-linear-gradient(-45deg, rgba(110, 69, 226, 1) 0%, rgba(136, 211, 206, 1) 99%);
 	background: linear-gradient(135deg, rgba(110, 69, 226, 1) 0%, rgba(136, 211, 206, 1) 99%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AD4744', endColorstr='#88d3ce', GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4bc5f', endColorstr='#88d3ce', GradientType=1);
 	color: #fff;
 	padding: 120px 0 330px;
 }
@@ -417,7 +442,7 @@ a.scroll-down:hover {
 .back-layer-1,
 .back-layer-2 {
 	height: 200px;
-	background: #AD4744;
+	background: #e4bc5f;
 	position: absolute;
 	width: 96%;
 	top: -20px;
@@ -561,7 +586,7 @@ a.scroll-down:hover {
 }
 
 .features-slider .owl-nav div:hover {
-	background: #AD4744;
+	background: #e4bc5f;
 }
 
 /*Testimonial*/
@@ -591,14 +616,14 @@ a.scroll-down:hover {
 	left: 0;
 	width: 25px;
 	height: 1px;
-	background: #AD4744;
+	background: #e4bc5f;
 	content: "";
 }
 
 .testimonial-header h1 {
 	font-size: 60px;
 	line-height: 70px;
-	color: #4f4f6f;
+	color: #501716;
 	margin-bottom: 70px;
 }
 
@@ -606,7 +631,7 @@ a.scroll-down:hover {
 	font-family: 'Playfair Display', serif;
 	font-style: italic;
 	font-size: 24px;
-	color: #4f4f6f;
+	color: #501716;
 	line-height: 36px;
 	max-width: 445px;
 }
@@ -658,7 +683,7 @@ a.scroll-down:hover {
 	left: 50%;
 	top: 50%;
 	color: #fff;
-	background: #AD4744;
+	background: #e4bc5f;
 	width: 70px;
 	height: 70px;
 	text-align: center;
@@ -685,7 +710,7 @@ a.scroll-down:hover {
 }
 
 .testimonial-slider .owl-dots div.active {
-	background: #AD4744;
+	background: #e4bc5f;
 }
 
 .testimonial-slider .owl-dots {
@@ -741,12 +766,12 @@ a.scroll-down:hover {
 	width: 25px;
 	height: 2px;
 	content: "";
-	background: #AD4744;
+	background: #e4bc5f;
 	margin-top: -1px;
 }
 
 .about-text h1 {
-	color: #4f4f6f;
+	color: #501716;
 	font-size: 60px;
 	font-weight: 500;
 	margin-bottom: 30px;
@@ -758,7 +783,7 @@ a.scroll-down:hover {
 }
 
 .scroll-down.about-scroll-down {
-	box-shadow: 0 0 22px 5px #AD4744;
+	box-shadow: 0 0 22px 5px #e4bc5f;
 }
 
 /*Team*/
@@ -784,7 +809,7 @@ a.scroll-down:hover {
 	left: 50%;
 	width: 25px;
 	height: 1px;
-	background: #AD4744;
+	background: #e4bc5f;
 	content: "";
 	margin-left: -80px;
 }
@@ -796,7 +821,7 @@ a.scroll-down:hover {
 }
 
 .team-title h1 {
-	color: #4f4f6f;
+	color: #501716;
 	font-size: 60px;
 	font-weight: 500;
 }
@@ -912,7 +937,7 @@ a.scroll-down:hover {
 }
 
 .articles-slider .owl-dots div.active {
-	background: #AD4744;
+	background: #e4bc5f;
 }
 
 .articles-slider .owl-dots {
@@ -944,11 +969,11 @@ a.scroll-down:hover {
 	width: 25px;
 	height: 1px;
 	content: "";
-	background: #AD4744;
+	background: #e4bc5f;
 }
 
 .articles-title h1 {
-	color: #4f4f6f;
+	color: #501716;
 	font-size: 60px;
 	font-weight: 500;
 }
@@ -959,7 +984,7 @@ a.scroll-down:hover {
 
 .articles-inner-title h3 {
 	font-size: 24px;
-	color: #4f4f6f;
+	color: #501716;
 	margin-bottom: 5px;
 }
 
@@ -980,7 +1005,7 @@ a.scroll-down:hover {
 	width: 70px;
 	height: 1px;
 	content: "";
-	background: #AD4744;
+	background: #e4bc5f;
 	margin-top: 30px;
 }
 
@@ -1124,7 +1149,7 @@ a.scroll-down:hover {
 
 .footer-menu span a {
 	display: inline-block;
-	background: #AD4744;
+	background: #e4bc5f;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -1201,7 +1226,7 @@ a.scroll-down:hover {
 }
 
 .whymisocial .hero-text h1 span {
-	background: #AD4744;
+	background: #e4bc5f;
 	border: 2px solid #6434ef;
 }
 
@@ -1357,7 +1382,7 @@ a.scroll-down:hover {
 	left: 50%;
 	width: 25px;
 	height: 1px;
-	background: #AD4744;
+	background: #e4bc5f;
 	content: "";
 	margin-left: -95px;
 	margin-top: -1px;
@@ -1370,7 +1395,7 @@ a.scroll-down:hover {
 }
 
 .top-title h1 {
-	color: #4f4f6f;
+	color: #501716;
 	font-weight: 500;
 	font-size: 60px;
 }
@@ -1403,7 +1428,7 @@ a.scroll-down:hover {
 
 .single-start-box h3 {
 	font-size: 24px;
-	color: #4f4f6f;
+	color: #501716;
 	margin: 30px 0 60px;
 	font-weight: 500;
 	position: relative;
@@ -1451,7 +1476,7 @@ a.scroll-down:hover {
 .single-price-box p {
 	position: relative;
 	font-size: 60px;
-	color: #4f4f6f;
+	color: #501716;
 	font-weight: 500;
 	margin-bottom: 40px;
 }
@@ -1475,7 +1500,7 @@ a.scroll-down:hover {
 }
 
 a.price-btn:hover {
-	background: #AD4744;
+	background: #e4bc5f;
 	color: #fff;
 }
 
@@ -1536,7 +1561,7 @@ a.price-btn:hover {
 }
 
 .articles .header-top .navbar li.getstart a {
-	background: #AD4744;
+	background: #e4bc5f;
 	color: #fff
 }
 
@@ -1661,7 +1686,7 @@ a.price-btn:hover {
 }
 
 .blog-meta h3 {
-	color: #4f4f6f;
+	color: #501716;
 	font-size: 24px;
 	margin-bottom: 2px;
 }
@@ -1678,7 +1703,7 @@ a.price-btn:hover {
 	width: 60px;
 	height: 1px;
 	content: "";
-	background: #AD4744;
+	background: #e4bc5f;
 }
 
 .blog-comments i.user-comments {
@@ -1745,11 +1770,11 @@ i.user-comments.cmnts-color-two {
 	width: 20px;
 	height: 1px;
 	content: "";
-	background: #AD4744;
+	background: #e4bc5f;
 }
 
 .start-title h1 {
-	color: #4f4f6f;
+	color: #501716;
 	font-size: 45px;
 }
 
@@ -1798,7 +1823,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 button[type=submit] {
-	background: #AD4744;
+	background: #e4bc5f;
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 700;
@@ -1910,7 +1935,7 @@ button[type=submit]:hover {
 }
 
 .data-section span {
-	color: #AD4744;
+	color: #e4bc5f;
 	font-weight: 900;
 	font-size: 56px;
 	float: left;
@@ -1932,21 +1957,21 @@ button[type=submit]:hover {
 
 .single-post-area h1 {
 	margin: 25px 0 20px;
-	color: #4f4f6f;
+	color: #501716;
 	font-size: 30px;
 }
 
 .data-img p {
-	border-bottom: 1px solid #AD4744;
+	border-bottom: 1px solid #e4bc5f;
 	padding: 45px 10px 30px;
 }
 
 .value-box {
 	background: #88d3ce;
-	background: -moz-linear-gradient(left, #88d3ce 0%, #AD4744 100%);
-	background: -webkit-linear-gradient(left, #88d3ce 0%, #AD4744 100%);
-	background: linear-gradient(to right, #88d3ce 0%, #AD4744 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88d3ce', endColorstr='#AD4744', GradientType=1);
+	background: -moz-linear-gradient(left, #88d3ce 0%, #e4bc5f 100%);
+	background: -webkit-linear-gradient(left, #88d3ce 0%, #e4bc5f 100%);
+	background: linear-gradient(to right, #88d3ce 0%, #e4bc5f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88d3ce', endColorstr='#e4bc5f', GradientType=1);
 	border-radius: 10px;
 	padding: 25px;
 	font-family: 'Playfair Display', serif;
@@ -1975,7 +2000,7 @@ button[type=submit]:hover {
 	text-align: center;
 	line-height: 65px;
 	color: #fff;
-	background: #AD4744;
+	background: #e4bc5f;
 	border-radius: 50%;
 	margin-left: -33px;
 	margin-top: -33px;

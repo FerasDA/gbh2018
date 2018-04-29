@@ -1,6 +1,16 @@
 jQuery(document).ready(function ($) {
 
+	var textToType = [' birthplace.', ' legacy.', ' culture.', ' history.'];
+	var typeWriter = new Typewriter(textToType, document.getElementById('typedText'), 0);
+	typeWriter.play();
 
+	$('.header-area').css({
+		height: window.innerHeight+"px"
+	});
+
+	$('.header-area .header-row').css({
+		['margin-top']: window.innerHeight/4 + "px"
+	});
 
 	//navbar click add class active
 	$(".navbar-nav").on("click", "li", function () {
