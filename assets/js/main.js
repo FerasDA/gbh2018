@@ -27,9 +27,9 @@ jQuery(document).ready(function ($) {
 				height: 60,
 				opacity: 1, //HACK
 			});
-			$(".header-top .navbar").addClass("animated slideInDown");
+			$(".navbar").addClass("animated slideInDown");
 		} else {
-			$(".header-top .navbar").css({
+			$(".navbar").css({
 				opacity: 0 //HACK
 			});
 			$(".header-top .navbar").removeClass("animated slideInDown");
