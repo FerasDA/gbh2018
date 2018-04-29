@@ -1667,6 +1667,11 @@ a.price-btn:hover {
 	margin-bottom: 40px;
 }
 
+/* .blog-img {
+	width: 256px;
+	height: 256px;
+} */
+
 .blog-meta {
 	padding: 20px;
 	position: relative;
@@ -1696,15 +1701,15 @@ a.price-btn:hover {
 	font-size: 13px;
 }
 
-.blog-meta:after {
+/* .blog-meta:after {
 	position: absolute;
 	top: 100%;
 	left: 20px;
 	width: 60px;
 	height: 1px;
 	content: "";
-	background: #e4bc5f;
-}
+	background: #AD4744;
+} */
 
 .blog-comments i.user-comments {
 	display: inline-block;
