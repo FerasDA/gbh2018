@@ -63,10 +63,8 @@ img.logo {
 
 .header-area {
 	background-color: #222;
-	background-size: cover;
-	background-position: center;
-	height: 1080px;
-	position: relative;
+	height: 100%;
+	display: block;
 	z-index: 3;
 }
 
@@ -1197,9 +1195,6 @@ a.scroll-down:hover {
 
 /*why Misocial Style*/
 
-.whymisocial.header-area {
-	background-image: url(assets/img/whymisocial/hero-bg.jpg)
-}
 
 .whymisocial .hero-text h6 {
 	padding-left: 0;
