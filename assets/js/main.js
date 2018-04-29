@@ -5,6 +5,10 @@ jQuery(document).ready(function ($) {
 		height: window.innerHeight+"px"
 	});
 
+	$('.archivePost').css({
+		height: window.innerHeight*2/3+"px"
+	});
+
 	$('.header-area .header-row').css({
 		['margin-top']: window.innerHeight/4 + "px"
 	});
@@ -16,23 +20,25 @@ jQuery(document).ready(function ($) {
 	});
 
 
+
+
 	//On scroll header add background
 	$(window).scroll(function () {
 		var a = 10;
 		var pos = $(window).scrollTop();
 		if (pos > a) {
-			$(".header-top .navbar").css({
-				background: '#222',
+			$(".navbar").css({
+				background: 'rgba(32, 32, 32, .95)',
 				transition: 'all 0.3s ease-in-out',
 				height: 60,
 				opacity: 1, //HACK
 			});
 			$(".navbar").addClass("animated slideInDown");
 		} else {
-			$(".navbar").css({
+			$(".header-top .navbar").css({
 				opacity: 0 //HACK
 			});
-			$(".header-top .navbar").removeClass("animated slideInDown");
+			$(".navbar").removeClass("animated slideInDown");
 		}
 	});
 

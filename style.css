@@ -70,6 +70,12 @@ img.logo {
 	z-index: 3;
 }
 
+.archivePost {
+	background-image: url('assets/img/templePhoto.jpg') !important;
+	background-attatchment: fixed;
+	background-size:contain;
+}
+
 .header-top {
 	padding: 48px 0 0;
 }
@@ -203,6 +209,22 @@ li.getstart a.active {
     content: "|";
     font-weight: 400;
     animation: blink 500ms ease-in-out infinite alternate;
+
+}
+
+#section2{
+	background: #222;
+	background: -moz-linear-gradient(-45deg, #222 0%, #555 99%);
+	background: -webkit-linear-gradient(-45deg, #222 0%, #555 99%);
+	background: -linear-gradient(-45deg, #222 0%, #555 99%);
+	color: purple;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4bc5f', endColorstr='#88d3ce', GradientType=1);
+}
+
+.blogpost-area h1{
+	margin: auto;
+
+	font-size: 3em;
 
 }
 
